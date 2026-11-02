@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'CCRegeneration';
+  src: url('/assets/font/FONNTS.COM-CCREGENERATION.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/assets/font/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/assets/font/NotoSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'CCRegeneration', 'Noto Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --radius-3xl: 12px;
+  --radius-2xl: 10px;
+  --radius-xl: 8px;
+  --radius-lg: 6px;
+  --radius-md: 4px;
+  --radius-sm: 2px;
+}
+
+body {
+  background-color: #FEF9C3;
+  font-family: var(--font-sans);
+  color: #1E293B;
+}
+
+
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Optimization for Mobile Landscape (Short screens / Landscape phones) */
+@media (max-height: 560px) and (orientation: landscape) {
+  /* Reduce outer wrapper padding */
+  .game-wrapper-padding {
+    padding: 6px !important;
+  }
+  
+  /* Compact brutalist cards */
+  .mobile-landscape-compact-card {
+    padding: 6px !important;
+    border-width: 1px !important;
+    border-radius: 8px !important;
+    box-shadow: 2px 2px 0px #000000 !important;
+  }
+
+  /* Flat canvas container for Stage 2 flat layout */
+  .mobile-landscape-flat-container {
+    padding: 6px !important;
+  }
+
+  /* Compact grid gaps */
+  .mobile-landscape-compact-gap {
+    gap: 8px !important;
+    margin-bottom: 4px !important;
+  }
+
+  /* Compact text headers and descriptions */
+  .mobile-landscape-compact-text {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+
+  /* Enforce 10px titles */
+  .mobile-landscape-compact-text h3,
+  .mobile-landscape-compact-card h3,
+  .mobile-landscape-flat-container h3 {
+    font-size: 10px !important;
+    line-height: 1.2 !important;
+  }
+  .mobile-landscape-compact-text h3 svg,
+  .mobile-landscape-compact-card h3 svg,
+  .mobile-landscape-flat-container h3 svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  /* Enforce 8px for all other texts inside compact cards & control panels & flat containers */
+  .mobile-landscape-compact-card p,
+  .mobile-landscape-compact-card span,
+  .mobile-landscape-compact-card label,
+  .mobile-landscape-compact-card input,
+  .mobile-landscape-compact-card button,
+  .mobile-landscape-compact-card td,
+  .mobile-landscape-compact-card th,
+  .mobile-landscape-compact-card table,
+  .mobile-landscape-compact-card tr,
+  .mobile-landscape-compact-card a,
+  .mobile-landscape-compact-card h4,
+  .mobile-landscape-flat-container p,
+  .mobile-landscape-flat-container span,
+  .mobile-landscape-flat-container label,
+  .mobile-landscape-flat-container input,
+  .mobile-landscape-flat-container button,
+  .mobile-landscape-flat-container td,
+  .mobile-landscape-flat-container th,
+  .mobile-landscape-flat-container table,
+  .mobile-landscape-flat-container tr,
+  .mobile-landscape-flat-container a,
+  .mobile-landscape-flat-container h4,
+  .mobile-landscape-compact-text p,
+  .mobile-landscape-compact-text span,
+  .mobile-landscape-compact-text button,
+  .mobile-landscape-compact-text label,
+  .mobile-landscape-compact-text input {
+    font-size: 8px !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Ensure all SVG icons inside these text nodes are also resized to 8px (except charts) */
+  .mobile-landscape-compact-card svg:not(.recharts-surface),
+  .mobile-landscape-flat-container svg:not(.recharts-surface),
+  .mobile-landscape-compact-text svg:not(.recharts-surface) {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  /* Exclude h3 svg from the global svg rule by overriding it */
+  .mobile-landscape-compact-text h3 svg,
+  .mobile-landscape-compact-card h3 svg,
+  .mobile-landscape-flat-container h3 svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  /* Ensure Recharts charts retain their layout and scale to the wrapper size */
+  .recharts-wrapper svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+
+  /* Compact input rows */
+  .input-row-compact {
+    padding: 4px 8px !important;
+    border-width: 1px !important;
+    border-radius: 6px !important;
+    box-shadow: 1.5px 1.5px 0px #000000 !important;
+    gap: 4px !important;
+  }
+  .input-row-compact input {
+    width: 36px !important;
+    padding: 2px !important;
+    border-radius: 2px !important;
+    border-width: 1px !important;
+    box-shadow: 1px 1px 0px #000000 !important;
+  }
+
+  /* Day tabs height and padding */
+  .day-tab-compact {
+    padding: 4px 8px !important;
+    border-width: 1px !important;
+    border-radius: 4px !important;
+    box-shadow: 1px 1px 0px #000000 !important;
+  }
+
+  /* Compact zero hint for mobile landscape */
+  #buku-zero-hint {
+    padding: 1px 4px !important;
+    margin-bottom: 2px !important;
+    border-radius: 4px !important;
+    border-width: 1px !important;
+    box-shadow: 0.5px 0.5px 0px #000000 !important;
+  }
+  #buku-zero-hint p {
+    font-size: 7.5px !important;
+    line-height: 1 !important;
+  }
+
+  /* Table cells padding */
+  .mobile-landscape-table-cell {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    border-width: 1px !important;
+  }
+  .mobile-landscape-compact-card table,
+  .mobile-landscape-compact-card td,
+  .mobile-landscape-compact-card th,
+  .mobile-landscape-flat-container table,
+  .mobile-landscape-flat-container td,
+  .mobile-landscape-flat-container th {
+    border-width: 1px !important;
+  }
+  .mobile-landscape-compact-card .overflow-hidden.rounded-xl.border-4,
+  .mobile-landscape-flat-container .overflow-hidden.rounded-xl.border-4 {
+    border-width: 1.5px !important;
+    box-shadow: 2px 2px 0px #000000 !important;
+  }
+
+  /* Table cell buttons */
+  .mobile-landscape-table-btn {
+    width: 30px !important;
+    height: 22px !important;
+    padding: 1px !important;
+    border-width: 1px !important;
+    box-shadow: 1px 1px 0px #000000 !important;
+  }
+
+
+  /* Hide auxiliary layout blocks to save vertical space on mobile landscape */
+  .mobile-landscape-hide {
+    display: none !important;
+  }
+}
