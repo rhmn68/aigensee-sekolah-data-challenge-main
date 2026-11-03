@@ -64,7 +64,7 @@ export const LevelComplete: React.FC<LevelCompleteProps> = ({
         transition={{ type: "spring", stiffness: 100 }}
         className="mx-auto mb-1.5 lg:mb-4 shrink-0"
       >
-        <span className="text-3xl lg:text-5xl leading-none animate-bounce inline-block">🏆</span>
+        <Trophy className="w-8 h-8 lg:w-12 lg:h-12 animate-bounce inline-block" />
       </motion.div>
 
       {/* Main congratz text */}

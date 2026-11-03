@@ -2,7 +2,7 @@ import React from 'react';
 import { Badge } from '@/src/types';
 import { BADGES } from '@/src/data/levels';
 
-import { Award, Lock, Milestone, CheckCircle2 } from 'lucide-react';
+import { Award, Lock, Milestone, BarChart3, TrendingUp, Search, Trophy } from 'lucide-react';
 
 interface BadgeGalleryProps {
   unlockedBadgeIds: string[];
@@ -45,9 +45,9 @@ export const BadgeGallery: React.FC<BadgeGalleryProps> = ({
                 isUnlocked ? '' : 'bg-slate-300'
               }`}>
                 {isUnlocked ? (
-                  b.id === 'data-collector' ? '📊' : 
-                  b.id === 'graph-maker' ? '📈' : 
-                  b.id === 'data-analyst' ? '🔍' : '🏆'
+                  b.id === 'data-collector' ? <BarChart3 className="w-5 h-5" /> :
+                  b.id === 'graph-maker' ? <TrendingUp className="w-5 h-5" /> :
+                  b.id === 'data-analyst' ? <Search className="w-5 h-5" /> : <Trophy className="w-5 h-5" />
                 ) : (
                   <Lock id={`badge-lock-${b.id}`} className="w-4 h-4 text-slate-700" />
                 )}

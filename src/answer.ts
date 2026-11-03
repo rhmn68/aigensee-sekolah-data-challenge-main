@@ -1,8 +1,8 @@
 /**
  * Sekolah Data Challenge - Kunci Jawaban & Panduan Solusi Lengkap
  * 
- * 🌐 Live URL Demo: https://glenrioariesto.github.io/sekolah-data-challenge/
- * 📂 Repository: https://github.com/glenrioariesto/sekolah-data-challenge
+ * Live URL Demo: https://glenrioariesto.github.io/sekolah-data-challenge/
+ * Repository: https://github.com/glenrioariesto/sekolah-data-challenge
  */
 
 export interface SchoolDataAnswer {

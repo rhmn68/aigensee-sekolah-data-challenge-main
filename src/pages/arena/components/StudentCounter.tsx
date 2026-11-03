@@ -109,7 +109,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
     if (!teacherMode) {
       if (autofilledDays.length > 0 && !autofilledDays.includes(day)) {
         playSynthesizerNote('fail');
-        setErrorWarning("⚠️ Batas penggunaan petunjuk adalah 1 hari saja.");
+        setErrorWarning("Batas penggunaan petunjuk adalah 1 hari saja.");
         return;
       }
       if (!autofilledDays.includes(day)) {
@@ -148,7 +148,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
       const aVal = inputs[r.day]?.alpha.trim();
       if (!pVal || !iVal || !sVal || !aVal) {
         playSynthesizerNote('fail');
-        setErrorWarning(`⚠️ Mohon isi semua kolom untuk hari ${r.day}! Jika tidak ada siswa, isi angka "0".`);
+        setErrorWarning(`Mohon isi semua kolom untuk hari ${r.day}! Jika tidak ada siswa, isi angka "0".`);
         setActiveTab(rIdx); // Switch to the incomplete day tab/page automatically!
         return;
       }
@@ -173,7 +173,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
         userAlpha !== target.alpha
       ) {
         playSynthesizerNote('fail');
-        setErrorWarning(`⚠️ Hitungan hari ${r.day} belum tepat. Periksa kembali jumlah Hadir, Izin, Sakit, atau Alfa!`);
+        setErrorWarning(`Hitungan hari ${r.day} belum tepat. Periksa kembali jumlah Hadir, Izin, Sakit, atau Alfa!`);
         setActiveTab(rIdx); // Switch to the incorrect day tab/page automatically!
         return;
       }
@@ -655,7 +655,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
           {/* Catatan pengisian nol - Super sleek & responsive */}
           <div id="buku-zero-hint" className="bg-[#FEF9C3] border border-black/25 rounded-md sm:rounded-lg px-1.5 sm:px-2.5 py-0.5 sm:py-1 text-center shadow-[0.5px_0.5px_0px_#000] sm:shadow-[1px_1px_0px_#000]">
             <p className="text-[7.5px] sm:text-[10px] md:text-[11px] font-extrabold text-slate-900 leading-tight">
-              💡 <span className="font-black text-rose-600">Catatan:</span> Jika tidak ada siswa, isi angka <strong>"0"</strong>.
+              <span className="font-black text-rose-600">Catatan:</span> Jika tidak ada siswa, isi angka <strong>"0"</strong>.
             </p>
           </div>
           {/* Verify Submission button */}

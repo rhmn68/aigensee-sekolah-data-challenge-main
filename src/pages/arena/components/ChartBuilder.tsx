@@ -59,7 +59,7 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
   const handleVerifyChart = () => {
     if (!selectedChartType) {
       playSynthesizerNote('fail');
-      setWarning("👉 Silakan klik salah satu tombol tipe grafik di atas terlebih dahulu!");
+      setWarning("Silakan klik salah satu tombol tipe grafik di atas terlebih dahulu!");
       return;
     }
     playSynthesizerNote('success');

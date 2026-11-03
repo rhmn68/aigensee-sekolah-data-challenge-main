@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Play } from 'lucide-react';
+import { Play, Target, Lightbulb } from 'lucide-react';
 import { GameLevel, GameStage } from '@/src/types';
 import { StudentCounter } from '@/src/pages/arena/components/StudentCounter';
 import { ChartBuilder } from '@/src/pages/arena/components/ChartBuilder';
@@ -189,7 +189,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
             }}
             className="bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-3 border-black font-black font-display text-[9px] sm:text-xs md:text-sm px-3.5 sm:px-6 py-1.5 sm:py-2.5 rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] flex items-center gap-1.5 sm:gap-2 cursor-pointer transition-transform hover:scale-105 active:scale-95 uppercase tracking-wide animate-bounce hover:animate-none"
           >
-            <span>📝 Lanjut Jawab Soal Analisis</span>
+            <span>Lanjut Jawab Soal Analisis</span>
             <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" />
           </button>
         </div>
@@ -221,7 +221,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
 
                 {/* Learning objective */}
                 <div id="objectives-goal-row" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#FDE047]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
-                  <div id="objectives-goal-icon" className="shrink-0 w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#FDE047] border-2 border-black flex items-center justify-center text-sm lg:text-2xl shadow-[2px_2px_0px_#000]">🎯</div>
+                  <div id="objectives-goal-icon" className="shrink-0 w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#FDE047] border-2 border-black flex items-center justify-center text-sm lg:text-2xl shadow-[2px_2px_0px_#000]"><Target className="w-4 h-4 lg:w-6 lg:h-6" /></div>
                   <div id="objectives-goal-text">
                     <h4 id="objectives-goal-heading" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">Tujuan Pembelajaran</h4>
                     <p id="objectives-goal-desc" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed">{activeLevel.focus}</p>
@@ -230,7 +230,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
 
                 {/* Learning outcome / what the student will be able to understand */}
                 <div id="objectives-outcome-row" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#A5F3FC]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
-                  <div id="objectives-outcome-icon" className="shrink-0 w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#A5F3FC] border-2 border-black flex items-center justify-center text-sm lg:text-2xl shadow-[2px_2px_0px_#000]">💡</div>
+                  <div id="objectives-outcome-icon" className="shrink-0 w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#A5F3FC] border-2 border-black flex items-center justify-center text-sm lg:text-2xl shadow-[2px_2px_0px_#000]"><Lightbulb className="w-4 h-4 lg:w-6 lg:h-6" /></div>
                   <div id="objectives-outcome-text">
                     <h4 id="objectives-outcome-heading" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">Setelah Misi Ini, Kamu Mampu</h4>
                     <ul id="objectives-outcome-list" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed list-disc pl-4 space-y-1">

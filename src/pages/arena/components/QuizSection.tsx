@@ -95,7 +95,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
                 className="bg-[#FDE047] hover:bg-[#FACC15] text-black font-black font-display text-[8px] sm:text-[10px] px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-black shadow-[1px_1px_0px_#000] sm:shadow-[1.5px_1.5px_0px_#000] flex items-center gap-1 cursor-pointer transition-transform hover:scale-105 uppercase tracking-tight"
                 title="Buka tampilan grafik yang sedang dikerjakan"
               >
-                <span>📊 Lihat Grafik</span>
+                <span>Lihat Grafik</span>
               </button>
             )}
           </div>

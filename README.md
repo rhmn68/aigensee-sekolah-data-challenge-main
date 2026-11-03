@@ -47,7 +47,7 @@ npm run preview
 Lalu buka URL yang muncul di terminal, biasanya:
 **http://localhost:4173/**
 
-### ⚠️ Jangan buka `dist/index.html` dengan drag-and-drop ke browser
+### Jangan buka `dist/index.html` dengan drag-and-drop ke browser
 Membuka file lewat protokol `file://` akan gagal (CORS / asset tidak termuat). Selalu sajikan `dist/` lewat HTTP, misalnya `npm run preview`, atau deploy ke hosting web.
 
 ## Script Lain

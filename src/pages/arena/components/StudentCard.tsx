@@ -134,12 +134,12 @@ const getStudentAvatar = (name: string, studentIdxInClass: number = 0) => {
 const getStudentQuote = (name: string, isCewe: boolean, isHighlighted: boolean): string => {
   if (isHighlighted) {
     const checkedQuotes = [
-      "Sudah dihitung! 🙋",
-      "Kehadiran tercatat! 📝",
+      "Sudah dihitung!",
+      "Kehadiran tercatat!",
       "Selesai dihitung! ✓",
-      "Sudah masuk daftar! 👍",
-      "Sip, tercatat! 🎯",
-      "Selesai! ✏️"
+      "Sudah masuk daftar!",
+      "Sip, tercatat!",
+      "Selesai!"
     ];
     let hash = 0;
     for (let i = 0; i < name.length; i++) {
@@ -148,24 +148,24 @@ const getStudentQuote = (name: string, isCewe: boolean, isHighlighted: boolean):
     return checkedQuotes[hash % checkedQuotes.length];
   } else {
     const maleQuotes = [
-      "Hadir! 🙋‍♂️",
-      "Saya masuk hari ini! 🙋‍♂️",
-      "Siap belajar 🙋‍♂️",
-      "Absen aman, Hadir! 🙋‍♂️",
-      "Ada dong, hadir! 🙋‍♂️",
-      "Hadir, siap grak! 🙋‍♂️",
-      "Masuk terus pantang bolos! 🙋‍♂️",
-      "Nggak pernah absen! 🙋‍♂️"
+      "Hadir!",
+      "Saya masuk hari ini!",
+      "Siap belajar",
+      "Absen aman, Hadir!",
+      "Ada dong, hadir!",
+      "Hadir, siap grak!",
+      "Masuk terus pantang bolos!",
+      "Nggak pernah absen!"
     ];
     const femaleQuotes = [
-      "Hadir! 🙋‍♀️",
-      "Saya masuk hari ini! 🙋‍♀️",
-      "Siap belajar! 🙋‍♀️",
-      "Absen aman, Hadir! 🙋‍♀️",
-      "Ada dong, hadir! 🙋‍♀️",
-      "Hadir, siap belajar! 🙋‍♀️",
-      "Masuk terus pantang bolos! 🙋‍♀️",
-      "Nggak pernah absen! 🙋‍♀️"
+      "Hadir!",
+      "Saya masuk hari ini!",
+      "Siap belajar!",
+      "Absen aman, Hadir!",
+      "Ada dong, hadir!",
+      "Hadir, siap belajar!",
+      "Masuk terus pantang bolos!",
+      "Nggak pernah absen!"
     ];
     let hash = 0;
     for (let i = 0; i < name.length; i++) {
@@ -228,7 +228,7 @@ export const StudentCard: React.FC<StudentCardProps> = ({
             transition={{ duration: 0.45 }}
             className="text-lg sm:text-xl font-black text-slate-400/80 animate-pulse"
           >
-            ❓
+            ?
           </motion.span>
         </div>
 

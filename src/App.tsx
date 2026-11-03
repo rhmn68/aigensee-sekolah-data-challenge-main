@@ -1,3 +1,4 @@
+import { Monitor } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { useGameState } from '@/src/hooks/useGameState';
@@ -80,7 +81,7 @@ export default function App() {
             <div id="fullscreen-prompt-icon-wrap" className="relative flex items-center justify-center mb-6">
               <div id="fullscreen-prompt-ping" className="absolute w-20 h-20 bg-[#FDE047]/30 rounded-full animate-ping opacity-75" />
               <div id="fullscreen-prompt-icon" className="w-16 h-16 bg-[#FDE047] border-2 border-black rounded-2xl flex items-center justify-center text-3xl shadow-[3px_3px_0px_rgba(0,0,0,1)] z-10">
-                📺
+                <Monitor className="w-8 h-8" />
               </div>
             </div>
 

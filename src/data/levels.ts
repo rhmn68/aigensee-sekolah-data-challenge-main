@@ -1,17 +1,17 @@
 import { GameLevel, Badge } from '@/src/types';
 
 export const BAD_PRACTICES_WARNINGS = [
-  "⚠️ Periksa kembali data hari Senin! Pastikan hitunganmu tepat.",
-  "⚠️ Periksa kembali data hari Selasa! Mungkin ada siswa yang terlewat.",
-  "⚠️ Periksa kembali data hari Rabu! Ingat, hitung dengan cermat.",
-  "⚠️ Periksa kembali data hari Kamis! Jangan terburu-buru.",
-  "⚠️ Periksa kembali data hari Jumat! Perhatikan status Hadir/Tidak Hadir."
+  "Periksa kembali data hari Senin! Pastikan hitunganmu tepat.",
+  "Periksa kembali data hari Selasa! Mungkin ada siswa yang terlewat.",
+  "Periksa kembali data hari Rabu! Ingat, hitung dengan cermat.",
+  "Periksa kembali data hari Kamis! Jangan terburu-buru.",
+  "Periksa kembali data hari Jumat! Perhatikan status Hadir/Tidak Hadir."
 ];
 
 export const BADGES: Badge[] = [
   {
     id: 'graph-maker',
-    name: '📈 Pembuat Grafik',
+    name: 'Pembuat Grafik',
     description: 'Siswa mampu menginput dan menyajikan data (Abstraksi) secara visual menggunakan tipe grafik yang tepat.',
     icon: 'BarChart2',
     achievedAtLevel: 1
