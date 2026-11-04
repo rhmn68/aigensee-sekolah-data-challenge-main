@@ -86,13 +86,13 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
         />
       </div>
 
-      {/* Logo Pojok Kiri Atas - Scaled to prevent covering in-game text at 1416px */}
+      {/* Logo Pojok Kiri Atas - Same responsive size as the main menu */}
       <div id="arena-logo-container" className="hidden lg:block fixed top-2 left-3 md:top-3 md:left-4 z-40 select-none pointer-events-none">
         <img 
           id="arena-logo-image"
           src={logoPusbuk} 
           alt="Logo Pusbuk" 
-          className="h-6 sm:h-8 md:h-10 lg:h-11 xl:h-12 w-auto object-contain drop-shadow-[0_4px_8px_rgba(56,69,91,0.45)]" 
+          className="h-7 sm:h-10 md:h-14 lg:h-16 2xl:h-28 w-auto object-contain drop-shadow-[0_4px_8px_rgba(56,69,91,0.45)]" 
         />
       </div>
 
@@ -102,7 +102,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
       </div>
 
       {/* MAIN LEVEL GAME ARENA VIEWPORT VIEW - With safe top clearance on desktop */}
-      <div id="arena-viewport" className="flex-1 min-h-0 w-full flex flex-col relative z-10 pt-1 lg:pt-14 xl:pt-16">
+      <div id="arena-viewport" className="flex-1 min-h-0 w-full flex flex-col relative z-10 pt-1 lg:pt-24 2xl:pt-36">
         <AnimatePresence mode="wait">
           
           {/* Stage: Manual list count Decomposition card */}
