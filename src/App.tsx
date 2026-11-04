@@ -153,7 +153,7 @@ export default function App() {
 
       {/* Footer Copyright: Tampil di Splash dan Ingame */}
       <footer className="fixed bottom-1.5 left-0 right-0 z-40 text-center pointer-events-none select-none text-[10px] sm:text-xs text-black font-display tracking-wider">
-        Copyright 2026 Pusat Perbukuan
+        © Copyright 2026 Pusat Perbukuan
       </footer>
     </div>
   );
