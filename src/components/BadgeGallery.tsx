@@ -15,7 +15,7 @@ export const BadgeGallery: React.FC<BadgeGalleryProps> = ({
     <div id="badge-gallery" className="bg-white rounded-xl border-4 border-black p-5 shadow-[8px_8px_0px_rgba(0,0,0,1)]">
       <div id="badge-gallery-header" className="flex items-center gap-2 border-b-2 border-black pb-3 mb-4">
         <Award id="badge-gallery-award-icon" className="w-5 h-5 text-rose-600" />
-        <h3 id="badge-gallery-title" className="text-sm font-black text-slate-950 font-display uppercase tracking-tight">
+        <h3 id="badge-gallery-title" className="text-sm font-black text-slate-950 font-display tracking-tight">
           Galeri Lencana Kehormatan
         </h3>
       </div>
@@ -59,7 +59,7 @@ export const BadgeGallery: React.FC<BadgeGalleryProps> = ({
                     {b.name}
                   </h4>
                   {isUnlocked && (
-                    <span id={`badge-active-${b.id}`} className="text-[8px] bg-black text-white font-black font-mono px-1.5 py-0.2 rounded-full border border-black uppercase scale-90">
+                    <span id={`badge-active-${b.id}`} className="text-[8px] bg-black text-white font-black font-mono px-1.5 py-0.2 rounded-full border border-black scale-90">
                       Aktif
                     </span>
                   )}

@@ -260,7 +260,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
         {/* Page content - school notebook look */}
         <div className="flex flex-col h-full font-mono text-slate-500 pl-2 sm:pl-4 z-10">
           <div className="flex items-center justify-between h-7 sm:h-10 border-b border-[#e2e8f0] pb-1 shrink-0">
-            <span className="text-[8px] sm:text-[10px] font-black uppercase text-slate-400">
+            <span className="text-[8px] sm:text-[10px] font-black text-slate-400">
               Catatan Harian
             </span>
             <span className="text-[7px] sm:text-[9px] font-bold text-slate-400">
@@ -294,7 +294,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
         <div className="flex flex-col h-full pl-2 sm:pl-4 z-10 justify-between">
           {/* Header row */}
           <div id={`buku-page-header-${roster.day}`} className="flex items-center justify-between h-7 sm:h-10 border-b border-[#e2e8f0] pb-1">
-            <span className="text-[10px] sm:text-xs font-black text-slate-800 uppercase tracking-wide font-display ml-4">
+            <span className="text-[10px] sm:text-xs font-black text-slate-800 tracking-wide font-display ml-4">
               Hari: {roster.day}
             </span>
             <span className="text-[10px] sm:text-xs font-sans text-slate-500 font-extrabold pr-6">
@@ -304,7 +304,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
 
           {/* Hadir Row */}
           <div id={`buku-row-hadir-${roster.day}`} className="flex items-center justify-between h-7 sm:h-12 border-b border-[#e2e8f0] pb-1 w-full">
-            <label id={`buku-label-hadir-${roster.day}`} className="text-[10px] sm:text-xs font-black text-emerald-700 uppercase font-display ml-4">Hadir</label>
+            <label id={`buku-label-hadir-${roster.day}`} className="text-[10px] sm:text-xs font-black text-emerald-700 font-display ml-4">Hadir</label>
             {isStatic ? (
               <div id={`buku-value-hadir-${roster.day}`} className="w-16 sm:w-24 p-0.5 sm:p-1.5 mr-2 sm:mr-4 bg-white text-[#1E293B] font-mono font-black text-center border-2 border-black rounded-lg shadow-[1.5px_1.5px_0px_rgba(0,0,0,1)] text-[10px] sm:text-sm flex items-center justify-center min-h-[20px] sm:min-h-[32px]">
                 {inputs[roster.day]?.present || ''}
@@ -325,7 +325,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
 
           {/* Izin Row */}
           <div id={`buku-row-izin-${roster.day}`} className="flex items-center justify-between h-7 sm:h-12 border-b border-[#e2e8f0] pb-1 w-full">
-            <label id={`buku-label-izin-${roster.day}`} className="text-[10px] sm:text-xs font-black text-sky-700 uppercase font-display ml-4">Izin</label>
+            <label id={`buku-label-izin-${roster.day}`} className="text-[10px] sm:text-xs font-black text-sky-700 font-display ml-4">Izin</label>
             {isStatic ? (
               <div id={`buku-value-izin-${roster.day}`} className="w-16 sm:w-24 p-0.5 sm:p-1.5 mr-2 sm:mr-4 bg-white text-[#1E293B] font-mono font-black text-center border-2 border-black rounded-lg shadow-[1.5px_1.5px_0px_rgba(0,0,0,1)] text-[10px] sm:text-sm flex items-center justify-center min-h-[20px] sm:min-h-[32px]">
                 {inputs[roster.day]?.permit || ''}
@@ -346,7 +346,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
 
           {/* Sakit Row */}
           <div id={`buku-row-sakit-${roster.day}`} className="flex items-center justify-between h-7 sm:h-12 border-b border-[#e2e8f0] pb-1 w-full">
-            <label id={`buku-label-sakit-${roster.day}`} className="text-[10px] sm:text-xs font-black text-amber-700 uppercase font-display ml-4">Sakit</label>
+            <label id={`buku-label-sakit-${roster.day}`} className="text-[10px] sm:text-xs font-black text-amber-700 font-display ml-4">Sakit</label>
             {isStatic ? (
               <div id={`buku-value-sakit-${roster.day}`} className="w-16 sm:w-24 p-0.5 sm:p-1.5 mr-2 sm:mr-4 bg-white text-[#1E293B] font-mono font-black text-center border-2 border-black rounded-lg shadow-[1.5px_1.5px_0px_rgba(0,0,0,1)] text-[10px] sm:text-sm flex items-center justify-center min-h-[20px] sm:min-h-[32px]">
                 {inputs[roster.day]?.sick || ''}
@@ -367,7 +367,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
 
           {/* Alfa Row */}
           <div id={`buku-row-alfa-${roster.day}`} className="flex items-center justify-between h-7 sm:h-12 border-b border-[#e2e8f0] pb-1 w-full">
-            <label id={`buku-label-alfa-${roster.day}`} className="text-[10px] sm:text-xs font-black text-rose-700 uppercase font-display ml-4">Alfa</label>
+            <label id={`buku-label-alfa-${roster.day}`} className="text-[10px] sm:text-xs font-black text-rose-700 font-display ml-4">Alfa</label>
             {isStatic ? (
               <div id={`buku-value-alfa-${roster.day}`} className="w-16 sm:w-24 p-0.5 sm:p-1.5 mr-2 sm:mr-4 bg-white text-[#1E293B] font-mono font-black text-center border-2 border-black rounded-lg shadow-[1.5px_1.5px_0px_rgba(0,0,0,1)] text-[10px] sm:text-sm flex items-center justify-center min-h-[20px] sm:min-h-[32px]">
                 {inputs[roster.day]?.alpha || ''}
@@ -424,7 +424,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
                   playSynthesizerNote('flip');
                   setActiveTab(idx);
                 }}
-                className={`px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-black rounded-xl border-2 border-black whitespace-nowrap transition-all duration-205 shadow-[2px_2px_0px_#000] day-tab-compact flex-1 text-center font-display uppercase ${
+                className={`px-3 py-1.5 sm:px-4 sm:py-2 text-xs font-black rounded-xl border-2 border-black whitespace-nowrap transition-all duration-205 shadow-[2px_2px_0px_#000] day-tab-compact flex-1 text-center font-display ${
                   activeTab === idx
                     ? 'bg-[#FDE047] text-black scale-105'
                     : 'bg-white text-slate-700 hover:bg-slate-100'
@@ -442,9 +442,9 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
               type="button"
               onClick={onToggleTeacherMode}
               className="hidden"
-              title={teacherMode ? "Mode Guru / Dev Aktif" : "Aktifkan Mode Guru / Dev"}
+              title={teacherMode ? "Mode Guru/Dev Aktif" : "Aktifkan Mode Guru/Dev"}
             >
-              <span>{teacherMode ? 'DEV: ON' : 'DEV: OFF'}</span>
+              <span>{teacherMode ? 'Mode guru: aktif' : 'Mode guru: nonaktif'}</span>
             </button>
           )}
 
@@ -498,7 +498,7 @@ export const StudentCounter: React.FC<StudentCounterProps> = ({
           {/* Header */}
           <div id="buku-rekapitulasi-header-wrap" className="shrink-0 mb-2">
             <div id="buku-rekapitulasi-header" className="flex items-center justify-between border-b-2 border-black/20 pb-1.5">
-              <h3 id="buku-rekapitulasi-title" className="text-xs sm:text-sm font-black text-slate-900 uppercase flex items-center gap-1 font-display">
+              <h3 id="buku-rekapitulasi-title" className="text-xs sm:text-sm font-black text-slate-900 flex items-center gap-1 font-display">
                 <ClipboardCheck id="buku-rekapitulasi-icon" className="w-4 h-4 text-slate-800" />
                 <span>Buku Rekapitulasi</span>
               </h3>

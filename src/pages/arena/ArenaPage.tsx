@@ -187,7 +187,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
               playSynthesizerNote('btn');
               setIsQuizMinimized(false);
             }}
-            className="bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-3 border-black font-black font-display text-[9px] sm:text-xs md:text-sm px-3.5 sm:px-6 py-1.5 sm:py-2.5 rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] flex items-center gap-1.5 sm:gap-2 cursor-pointer transition-transform hover:scale-105 active:scale-95 uppercase tracking-wide animate-bounce hover:animate-none"
+            className="bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-3 border-black font-black font-display text-[9px] sm:text-xs md:text-sm px-3.5 sm:px-6 py-1.5 sm:py-2.5 rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] flex items-center gap-1.5 sm:gap-2 cursor-pointer transition-transform hover:scale-105 active:scale-95 tracking-wide animate-bounce hover:animate-none"
           >
             <span>Lanjut Jawab Soal Analisis</span>
             <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" />
@@ -208,10 +208,10 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
             >
               {/* Header Title */}
               <div id="objectives-header" className="text-center space-y-1 md:space-y-2 border-b-2 sm:border-b-4 border-black shrink-0 pb-2 lg:pb-4">
-                <h2 id="objectives-title" className="text-[17px] lg:text-2xl font-black font-display uppercase tracking-tight text-slate-900 pt-0.5 sm:pt-1">
+                <h2 id="objectives-title" className="text-[17px] lg:text-2xl font-black font-display tracking-tight text-slate-900 pt-0.5 sm:pt-1">
                   Tujuan Pembelajaran
                 </h2>
-                <p id="objectives-level-title" className="text-[9px] sm:text-xs lg:text-base text-slate-600 font-bold uppercase tracking-wide">
+                <p id="objectives-level-title" className="text-[9px] sm:text-xs lg:text-base text-slate-600 font-bold tracking-wide">
                   {activeLevel.title}
                 </p>
               </div>
@@ -223,7 +223,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
                 <div id="objectives-goal-row" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#FDE047]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
                   <div id="objectives-goal-icon" className="shrink-0 w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#FDE047] border-2 border-black flex items-center justify-center text-sm lg:text-2xl shadow-[2px_2px_0px_#000]"><Target className="w-4 h-4 lg:w-6 lg:h-6" /></div>
                   <div id="objectives-goal-text">
-                    <h4 id="objectives-goal-heading" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">Tujuan Pembelajaran</h4>
+                    <h4 id="objectives-goal-heading" className="font-black text-[11px] lg:text-lg text-slate-900 font-display">Tujuan Pembelajaran</h4>
                     <p id="objectives-goal-desc" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed">{activeLevel.focus}</p>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
                 <div id="objectives-outcome-row" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#A5F3FC]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
                   <div id="objectives-outcome-icon" className="shrink-0 w-8 h-8 lg:w-12 lg:h-12 rounded-full bg-[#A5F3FC] border-2 border-black flex items-center justify-center text-sm lg:text-2xl shadow-[2px_2px_0px_#000]"><Lightbulb className="w-4 h-4 lg:w-6 lg:h-6" /></div>
                   <div id="objectives-outcome-text">
-                    <h4 id="objectives-outcome-heading" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">Setelah Misi Ini, Kamu Mampu</h4>
+                    <h4 id="objectives-outcome-heading" className="font-black text-[11px] lg:text-lg text-slate-900 font-display">Setelah Misi Ini, Kamu Mampu</h4>
                     <ul id="objectives-outcome-list" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed list-disc pl-4 space-y-1">
                       <li>Menghitung dan merangkum data kehadiran siswa secara teliti.</li>
                       <li>Memilih tipe grafik yang tepat untuk menyajikan data.</li>
@@ -248,7 +248,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
                   id="btn-lanjut-cara-bermain"
                   type="button"
                   onClick={closeObjectivesAndShowIntro}
-                  className="w-fit sm:w-full bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-4 border-black text-[11px] lg:text-lg font-black py-2.5 lg:py-4 rounded-xl sm:rounded-2xl uppercase tracking-wider cursor-pointer shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] active:translate-y-0.5 active:shadow-[1px_1px_0px_#000] flex items-center justify-center gap-2 font-display"
+                  className="w-fit sm:w-full bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-4 border-black text-[11px] lg:text-lg font-black py-2.5 lg:py-4 rounded-xl sm:rounded-2xl tracking-wider cursor-pointer shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] active:translate-y-0.5 active:shadow-[1px_1px_0px_#000] flex items-center justify-center gap-2 font-display"
                 >
                   <span>Lanjut ke Cara Bermain</span>
                 </button>
@@ -271,7 +271,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
             >
               {/* Header Title */}
               <div id="intro-header" className="text-center space-y-1 md:space-y-2 border-b-2 sm:border-b-4 border-black shrink-0">
-                <h2 id="intro-title" className="text-[17px] lg:text-2xl font-black font-display uppercase tracking-tight text-slate-900 pt-0.5 sm:pt-1">
+                <h2 id="intro-title" className="text-[17px] lg:text-2xl font-black font-display tracking-tight text-slate-900 pt-0.5 sm:pt-1">
                   Cara Bermain
                 </h2>
               </div>
@@ -280,21 +280,21 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
               <div id="intro-steps" className="flex-1 overflow-y-auto py-2 lg:py-6 space-y-2 sm:space-y-4 md:space-y-5 pr-1">
                 <div id="intro-step-1" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#A5F3FC]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
                   <div>
-                    <h4 id="intro-step-1-title" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">1. Hitung Kehadiran</h4>
+                    <h4 id="intro-step-1-title" className="font-black text-[11px] lg:text-lg text-slate-900 font-display">1. Hitung Kehadiran</h4>
                     <p id="intro-step-1-desc" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed">Hitung jumlah siswa Hadir dan Tidak Hadir di lembar absen manual harian.</p>
                   </div>
                 </div>
 
                 <div id="intro-step-2" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#CCFBF1]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
                   <div>
-                    <h4 id="intro-step-2-title" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">2. Pilih Tipe Grafik</h4>
+                    <h4 id="intro-step-2-title" className="font-black text-[11px] lg:text-lg text-slate-900 font-display">2. Pilih Tipe Grafik</h4>
                     <p id="intro-step-2-desc" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed">Pilih tipe diagram untuk memvisualisasikan data kehadiran.</p>
                   </div>
                 </div>
 
                 <div id="intro-step-3" className="flex gap-1.5 lg:gap-4 items-start p-2 lg:p-5 bg-[#FDE047]/30 border-2 sm:border-3 border-black rounded-xl sm:rounded-2xl shadow-[2px_2px_0px_#000] sm:shadow-[3px_3px_0px_#000]">
                   <div>
-                    <h4 id="intro-step-3-title" className="font-black text-[11px] lg:text-lg uppercase text-slate-900 font-display">3. Analisis Pola</h4>
+                    <h4 id="intro-step-3-title" className="font-black text-[11px] lg:text-lg text-slate-900 font-display">3. Analisis Pola</h4>
                     <p id="intro-step-3-desc" className="text-[9px] sm:text-xs lg:text-base text-slate-700 font-bold mt-1 leading-relaxed">Amati pola grafik dan jawab beberapa pertanyaan kuis analisis data.</p>
                   </div>
                 </div>
@@ -309,7 +309,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
                     playSynthesizerNote('click');
                     setIsTutorialOpen(true);
                   }}
-                  className="w-fit sm:w-full bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-4 border-black text-[11px] lg:text-lg font-black py-2.5 lg:py-4 rounded-xl sm:rounded-2xl uppercase tracking-wider cursor-pointer shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] active:translate-y-0.5 active:shadow-[1px_1px_0px_#000] flex items-center justify-center gap-2 font-display"
+                  className="w-fit sm:w-full bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-4 border-black text-[11px] lg:text-lg font-black py-2.5 lg:py-4 rounded-xl sm:rounded-2xl tracking-wider cursor-pointer shadow-[2px_2px_0px_#000] sm:shadow-[4px_4px_0px_#000] active:translate-y-0.5 active:shadow-[1px_1px_0px_#000] flex items-center justify-center gap-2 font-display"
                 >
                   <Play id="intro-play-icon" className="w-4 h-4 lg:w-6 lg:h-6 text-black fill-black animate-pulse" />
                   <span>Mulai Bermain</span>
@@ -332,7 +332,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
               exit={{ scale: 0.95, opacity: 0, y: 10 }}
               className="bg-white rounded-3xl border-4 border-black shadow-[6px_6px_0px_#000] p-3 lg:p-8 max-w-3xl w-full flex flex-col max-h-[88vh] overflow-y-auto"
             >
-              <h2 id="tutorial-title" className="text-center text-lg lg:text-2xl font-black font-display uppercase text-slate-900 border-b-4 border-black pb-3">
+              <h2 id="tutorial-title" className="text-center text-lg lg:text-2xl font-black font-display text-slate-900 border-b-4 border-black pb-3">
                 Video Tutorial
               </h2>
               <div className="py-4 lg:py-6">
@@ -367,7 +367,7 @@ export const ArenaPage: React.FC<ArenaPageProps> = ({
                     setIsTutorialOpen(false);
                     onStartGame();
                   }}
-                  className="w-full bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-4 border-black text-sm lg:text-lg font-black py-3 lg:py-4 rounded-xl sm:rounded-2xl uppercase tracking-wider cursor-pointer shadow-[4px_4px_0px_#000] active:translate-y-0.5 active:shadow-[1px_1px_0px_#000] flex items-center justify-center gap-2 font-display"
+                  className="w-full bg-[#FDE047] hover:bg-[#FACC15] text-black border-2 sm:border-4 border-black text-sm lg:text-lg font-black py-3 lg:py-4 rounded-xl sm:rounded-2xl tracking-wider cursor-pointer shadow-[4px_4px_0px_#000] active:translate-y-0.5 active:shadow-[1px_1px_0px_#000] flex items-center justify-center gap-2 font-display"
                 >
                   <Play className="w-5 h-5 fill-current" />
                   Mulai Bermain

@@ -77,7 +77,7 @@ export default function App() {
       {showFullscreenPrompt && (
         <div id="fullscreen-prompt-overlay" className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-900/60 backdrop-blur-md p-4 select-none animate-fadeIn">
           <div id="fullscreen-prompt-card" className="relative max-w-sm w-full mx-auto bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
-            <h3 id="fullscreen-prompt-title" className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2 uppercase font-display">
+            <h3 id="fullscreen-prompt-title" className="text-lg sm:text-xl font-black text-slate-900 tracking-tight mb-2 font-display">
               Mode Layar Penuh
             </h3>
             
@@ -90,7 +90,7 @@ export default function App() {
                 id="btn-fullscreen-yes"
                 type="button"
                 onClick={enterFullscreen}
-                className="flex-1 bg-[#FDE047] hover:bg-[#FACC15] text-black font-black py-2.5 rounded-xl border-2 border-black shadow-[3px_3px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer font-display uppercase tracking-wide text-xs"
+                className="flex-1 bg-[#FDE047] hover:bg-[#FACC15] text-black font-black py-2.5 rounded-xl border-2 border-black shadow-[3px_3px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer font-display tracking-wide text-xs"
               >
                 Yes
               </button>
@@ -99,7 +99,7 @@ export default function App() {
                 id="btn-fullscreen-no"
                 type="button"
                 onClick={dismissFullscreenPrompt}
-                className="flex-1 bg-slate-100 hover:bg-slate-200 border-2 border-black text-slate-800 font-black py-2.5 rounded-xl shadow-[3px_3px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer font-display uppercase tracking-wide text-xs"
+                className="flex-1 bg-slate-100 hover:bg-slate-200 border-2 border-black text-slate-800 font-black py-2.5 rounded-xl shadow-[3px_3px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer font-display tracking-wide text-xs"
               >
                 No
               </button>

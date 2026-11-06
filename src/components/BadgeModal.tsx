@@ -44,7 +44,7 @@ export const BadgeModal: React.FC<BadgeModalProps> = ({ isOpen, unlockedBadgeIds
             id="btn-badge-back"
             type="button"
             onClick={() => { playSynthesizerNote('btn'); onClose(); }}
-            className="px-6 py-3 bg-black text-white hover:bg-slate-900 border-2 border-black rounded-lg text-xs font-black uppercase tracking-wider cursor-pointer shadow-[2px_2px_0px_#000] transition-colors active:translate-y-0.5"
+            className="px-6 py-3 bg-black text-white hover:bg-slate-900 border-2 border-black rounded-lg text-xs font-black tracking-wider cursor-pointer shadow-[2px_2px_0px_#000] transition-colors active:translate-y-0.5"
           >
             Kembali ke Misi
           </button>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { GameLevel, Badge } from '@/src/types';
 import { motion } from 'motion/react';
-import { Award, Star, ArrowRight, RefreshCw, Trophy, ClipboardCheck, Sparkles, Brain, CheckCircle, RotateCcw } from 'lucide-react';
+import { RefreshCw, Trophy, RotateCcw } from 'lucide-react';
 import { BADGES, LEVELS } from '@/src/data/levels';
 import { playSynthesizerNote, startBgm, stopBgm } from '@/src/utils/audio';
 
@@ -74,7 +74,7 @@ export const LevelComplete: React.FC<LevelCompleteProps> = ({
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.1 }}
       >
-        <h2 id="level-complete-title" className="text-sm lg:text-2xl font-black text-slate-950 font-display leading-tight uppercase tracking-tight lg:mt-3">
+        <h2 id="level-complete-title" className="text-sm lg:text-2xl font-black text-slate-950 font-display leading-tight tracking-tight lg:mt-3">
           Selamat! Kamu <br /> Master Berpikir Komputasional!
         </h2>
       </motion.div>
@@ -87,8 +87,8 @@ export const LevelComplete: React.FC<LevelCompleteProps> = ({
         transition={{ delay: 0.2 }}
         className="my-2 lg:mt-4 lg:mb-3 text-center"
       >
-        <span id="level-complete-score-label" className="text-[9px] lg:text-[11px] uppercase font-black text-slate-700 font-display tracking-wider block">Nilai Akhir Analisis</span>
-        <p id="level-complete-score-value" className="text-xl lg:text-3xl font-mono font-black text-black mt-0.5">{totalScore} <span className="text-xs lg:text-base font-bold text-slate-600">/ 100</span></p>
+        <span id="level-complete-score-label" className="text-[9px] lg:text-[11px] font-black text-slate-700 font-display tracking-wider block">Nilai Akhir Analisis</span>
+        <p id="level-complete-score-value" className="text-xl lg:text-3xl font-mono font-black text-black mt-0.5">{totalScore}<span className="text-xs lg:text-base font-bold text-slate-600">/100</span></p>
       </motion.div>
 
       {/* Foot Actions */}
@@ -105,7 +105,7 @@ export const LevelComplete: React.FC<LevelCompleteProps> = ({
             playSynthesizerNote('click');
             onNextLevel();
           }}
-          className="flex-1 lg:flex-none bg-[#FDE047] hover:bg-[#FACC15] text-black font-black px-3 lg:px-5 py-2 lg:py-3 rounded-xl lg:rounded-2xl text-[10px] lg:text-sm flex items-center justify-center gap-1 lg:gap-2 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] lg:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-colors cursor-pointer font-display uppercase tracking-tight whitespace-nowrap"
+          className="flex-1 lg:flex-none bg-[#FDE047] hover:bg-[#FACC15] text-black font-black px-3 lg:px-5 py-2 lg:py-3 rounded-xl lg:rounded-2xl text-[10px] lg:text-sm flex items-center justify-center gap-1 lg:gap-2 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] lg:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-colors cursor-pointer font-display tracking-tight whitespace-nowrap"
           id="btn-play-again"
         >
           <RotateCcw id="btn-play-again-icon" className="w-3.5 h-3.5 lg:w-5 lg:h-5" />
@@ -118,7 +118,7 @@ export const LevelComplete: React.FC<LevelCompleteProps> = ({
             playSynthesizerNote('click');
             onRestartGame();
           }}
-          className="flex-1 lg:flex-none bg-[#CCFBF1] hover:bg-[#99F6E4] text-black font-black px-3 lg:px-5 py-2 lg:py-3 rounded-xl lg:rounded-2xl text-[10px] lg:text-sm flex items-center justify-center gap-1 lg:gap-2 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] lg:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-colors cursor-pointer font-display uppercase tracking-tight whitespace-nowrap"
+          className="flex-1 lg:flex-none bg-[#CCFBF1] hover:bg-[#99F6E4] text-black font-black px-3 lg:px-5 py-2 lg:py-3 rounded-xl lg:rounded-2xl text-[10px] lg:text-sm flex items-center justify-center gap-1 lg:gap-2 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] lg:shadow-[4px_4px_0px_rgba(0,0,0,1)] transition-colors cursor-pointer font-display tracking-tight whitespace-nowrap"
           id="btn-play-new-data"
         >
           <RefreshCw id="btn-play-new-data-icon" className="w-3.5 h-3.5 lg:w-5 lg:h-5" />

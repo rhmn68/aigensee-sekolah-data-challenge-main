@@ -83,7 +83,7 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
       {/* Left Column: Format Selection */}
       <div id="chart-builder-left" className="flex-[3] sm:flex-[4] min-w-0 flex flex-col h-fit sm:h-full bg-white border-2 sm:border-4 border-black rounded-2xl sm:rounded-3xl p-2 sm:p-5 shadow-[4px_4px_0px_rgba(0,0,0,1)] sm:shadow-[8px_8px_0px_rgba(0,0,0,1)] mobile-landscape-compact-card">
         <div id="chart-builder-left-header" className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3 shrink-0">
-          <h3 id="chart-builder-left-title" className="text-[10px] sm:text-sm font-black text-slate-900 uppercase font-display">
+          <h3 id="chart-builder-left-title" className="text-[10px] sm:text-sm font-black text-slate-900 font-display">
             Penyajian Data
           </h3>
         </div>
@@ -108,9 +108,9 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
               <BarChart2 className="w-4 h-4 sm:w-5 sm:h-5 font-bold" />
             </div>
             <div id="chart-batang-text" className="flex-1">
-              <h4 id="chart-batang-title" className="font-extrabold text-[10px] sm:text-xs text-black font-display uppercase">Batang</h4>
+              <h4 id="chart-batang-title" className="font-extrabold text-[10px] sm:text-xs text-black font-display">Batang</h4>
               <p id="chart-batang-desc" className="hidden sm:block text-[9px] sm:text-[10px] mt-0.5 leading-normal text-slate-800 font-bold">
-                Bandingkan total Hadir, Izin, Sakit, dan Alfa (Semua Hari / Per Hari).
+                Bandingkan total Hadir, Izin, Sakit, dan Alfa (Semua Hari/Per Hari).
               </p>
             </div>
           </button>
@@ -130,7 +130,7 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
               <TrendingUp className="w-4 h-4 sm:w-5 sm:h-5 font-bold" />
             </div>
             <div id="chart-garis-text" className="flex-1">
-              <h4 id="chart-garis-title" className="font-extrabold text-[10px] sm:text-xs text-black font-display uppercase">Garis</h4>
+              <h4 id="chart-garis-title" className="font-extrabold text-[10px] sm:text-xs text-black font-display">Garis</h4>
               <p id="chart-garis-desc" className="hidden sm:block text-[9px] sm:text-[10px] mt-0.5 leading-normal text-slate-800 font-bold">
                 Diagram garis adalah grafik berbentuk garis yang digunakan untuk melihat naik-turunnya suatu data dari waktu ke waktu
               </p>
@@ -152,9 +152,9 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
               <CircleDot className="w-4 h-4 sm:w-5 sm:h-5 font-bold" />
             </div>
             <div id="chart-lingkaran-text" className="flex-1">
-              <h4 id="chart-lingkaran-title" className="font-extrabold text-[10px] sm:text-xs text-black font-display uppercase">Lingkaran</h4>
+              <h4 id="chart-lingkaran-title" className="font-extrabold text-[10px] sm:text-xs text-black font-display">Lingkaran</h4>
               <p id="chart-lingkaran-desc" className="hidden sm:block text-[9px] sm:text-[10px] mt-0.5 leading-normal text-slate-800 font-bold">
-                Visualisasikan perbandingan persentase rasio kehadiran (Semua Hari / Per Hari).
+                Visualisasikan perbandingan persentase rasio kehadiran (Semua Hari/Per Hari).
               </p>
             </div>
           </button>
@@ -166,19 +166,19 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
         
         {/* Header statement with Day Filter Tabs */}
         <div id="chart-header-row" className="flex items-center justify-between gap-2 mb-3 border-b-2 border-black pb-2.5 shrink-0 min-w-0">
-          <span id="chart-header-title" className="text-xs font-black text-slate-900 font-display uppercase tracking-wide shrink-0">
+          <span id="chart-header-title" className="text-xs font-black text-slate-900 font-display tracking-wide shrink-0">
             Visualisasi: {selectedChartType ? `Diagram ${selectedChartType}` : 'Pilih Format'}
           </span>
 
           {/* Filter Per Hari (for Batang & Lingkaran) */}
           {(selectedChartType === 'batang' || selectedChartType === 'lingkaran') && (
             <div id="chart-filter-row" className="flex items-center gap-1 overflow-x-auto p-0.5 scrollbar-none whitespace-nowrap shrink min-w-0">
-              <span id="chart-filter-label" className="text-[9px] font-display font-black text-slate-600 mr-1 uppercase shrink-0">Filter:</span>
+              <span id="chart-filter-label" className="text-[9px] font-display font-black text-slate-600 mr-1 shrink-0">Filter:</span>
               <button
                 id="btn-filter-semua"
                 type="button"
                 onClick={() => { playSynthesizerNote('click'); setSelectedDay('semua'); }}
-                className={`px-2 py-0.5 text-[9px] font-display font-black rounded-md border border-black uppercase transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                className={`px-2 py-0.5 text-[9px] font-display font-black rounded-md border border-black transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                   selectedDay === 'semua' ? 'bg-[#FDE047] text-black shadow-[1px_1px_0px_#000]' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                 }`}
               >
@@ -190,7 +190,7 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
                   key={r.day}
                   type="button"
                   onClick={() => { playSynthesizerNote('click'); setSelectedDay(r.day); }}
-                  className={`px-2 py-0.5 text-[9px] font-display font-black rounded-md border border-black uppercase transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+                  className={`px-2 py-0.5 text-[9px] font-display font-black rounded-md border border-black transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                     selectedDay === r.day ? 'bg-[#FDE047] text-black shadow-[1px_1px_0px_#000]' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                   }`}
                 >
@@ -247,7 +247,7 @@ export const ChartBuilder: React.FC<ChartBuilderProps> = ({
                   playSynthesizerNote('btn');
                   onSuccess(20);
                 }}
-                className="bg-black hover:bg-slate-900 text-white font-black font-display border-2 border-black text-xs py-2.5 px-5 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-[3px_3px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[1.5px_1.5px_0px_#000] uppercase tracking-wide"
+                className="bg-black hover:bg-slate-900 text-white font-black font-display border-2 border-black text-xs py-2.5 px-5 rounded-xl flex items-center gap-1.5 cursor-pointer shadow-[3px_3px_0px_#000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[1.5px_1.5px_0px_#000] tracking-wide"
               >
                 <span>Buka Soal Analisis →</span>
               </button>

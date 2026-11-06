@@ -148,7 +148,7 @@ export const ChartVisualizer: React.FC<ChartVisualizerProps> = ({
                     </span>
                   </motion.div>
                 </div>
-                <span id={`chart-batang-label-${idx}`} className="text-[9px] sm:text-xs font-black text-slate-900 mt-1.5 whitespace-nowrap font-display uppercase">
+                <span id={`chart-batang-label-${idx}`} className="text-[9px] sm:text-xs font-black text-slate-900 mt-1.5 whitespace-nowrap font-display">
                   {item.label}
                 </span>
               </div>
@@ -189,7 +189,7 @@ export const ChartVisualizer: React.FC<ChartVisualizerProps> = ({
             <Line type="monotone" dataKey="Sakit" stroke="#F59E0B" strokeWidth={3} dot={{ r: 3, fill: '#F59E0B', stroke: '#000', strokeWidth: 1.5 }} activeDot={{ r: 5 }} />
             <Line type="monotone" dataKey="Alfa" stroke="#EF4444" strokeWidth={3} dot={{ r: 3, fill: '#EF4444', stroke: '#000', strokeWidth: 1.5 }} activeDot={{ r: 5 }} />
           </LineChart>
-          <div id="chart-garis-legend" className="bg-white border border-black px-1.5 py-0.5 rounded-md flex flex-wrap justify-center gap-x-2 gap-y-0.5 shadow-[1px_1px_0px_#000] text-[8px] sm:text-[9px] font-black mt-1 mx-auto w-fit font-display uppercase">
+          <div id="chart-garis-legend" className="bg-white border border-black px-1.5 py-0.5 rounded-md flex flex-wrap justify-center gap-x-2 gap-y-0.5 shadow-[1px_1px_0px_#000] text-[8px] sm:text-[9px] font-black mt-1 mx-auto w-fit font-display">
             <div id="chart-garis-legend-hadir" className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-[#10B981] border border-black" /><span>Hadir</span></div>
             <div id="chart-garis-legend-izin" className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] border border-black" /><span>Izin</span></div>
             <div id="chart-garis-legend-sakit" className="flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] border border-black" /><span>Sakit</span></div>
@@ -232,22 +232,22 @@ export const ChartVisualizer: React.FC<ChartVisualizerProps> = ({
               />
             </PieChart>
             <div id="chart-lingkaran-ratio" className="text-left space-y-1 bg-slate-50 border border-slate-200 p-2 sm:p-3 rounded-xl shadow-xs shrink-0">
-              <h4 id="chart-lingkaran-ratio-title" className="text-[9px] sm:text-xs font-black text-slate-900 uppercase tracking-wide border-b border-slate-200 pb-1 mb-1 font-display">Rasio Kumulatif</h4>
+              <h4 id="chart-lingkaran-ratio-title" className="text-[9px] sm:text-xs font-black text-slate-900 tracking-wide border-b border-slate-200 pb-1 mb-1 font-display">Rasio Kumulatif</h4>
               <div id="chart-lingkaran-ratio-hadir" className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#10B981]" />
-                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display uppercase">Hadir: <strong>{totalPresent}</strong> ({Math.round(pctPresent)}%)</span>
+                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display">Hadir: <strong>{totalPresent}</strong> ({Math.round(pctPresent)}%)</span>
               </div>
               <div id="chart-lingkaran-ratio-izin" className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#0EA5E9]" />
-                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display uppercase">Izin: <strong>{totalPermit}</strong> ({Math.round(pctPermit)}%)</span>
+                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display">Izin: <strong>{totalPermit}</strong> ({Math.round(pctPermit)}%)</span>
               </div>
               <div id="chart-lingkaran-ratio-sakit" className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#F59E0B]" />
-                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display uppercase">Sakit: <strong>{totalSick}</strong> ({Math.round(pctSick)}%)</span>
+                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display">Sakit: <strong>{totalSick}</strong> ({Math.round(pctSick)}%)</span>
               </div>
               <div id="chart-lingkaran-ratio-alfa" className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#EF4444]" />
-                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display uppercase">Alfa: <strong>{totalAlpha}</strong> ({Math.round(pctAlpha)}%)</span>
+                <span className="text-[9px] sm:text-xs text-slate-800 font-bold font-display">Alfa: <strong>{totalAlpha}</strong> ({Math.round(pctAlpha)}%)</span>
               </div>
             </div>
           </div>

@@ -276,7 +276,7 @@ export const StudentCard: React.FC<StudentCardProps> = ({
           <motion.span 
             animate={isHovered ? { scale: 1.12, rotate: [0, -4, 4, 0] } : { scale: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
-            className={`px-1.5 py-0.5 rounded-lg text-[8px] sm:text-[9px] md:text-[10px] font-black border flex items-center gap-0.5 shadow-[0.5px_0.5px_0px_#000] font-display uppercase ${statusBadgeStyle}`}
+            className={`px-1.5 py-0.5 rounded-lg text-[8px] sm:text-[9px] md:text-[10px] font-black border flex items-center gap-0.5 shadow-[0.5px_0.5px_0px_#000] font-display ${statusBadgeStyle}`}
           >
             <UserX className="w-2 h-2 sm:w-2.5 sm:h-2.5 text-inherit" />
             {status}

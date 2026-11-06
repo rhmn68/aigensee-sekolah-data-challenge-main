@@ -81,7 +81,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
         {/* Index counter & View Chart Action */}
         <div id="quiz-header" className="flex items-center justify-between mb-2 sm:mb-4 gap-1.5 sm:gap-2 flex-wrap">
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <span id="quiz-counter" className="text-[8px] sm:text-[10px] font-display font-black bg-[#CCFBF1] text-black px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-full uppercase tracking-wider border border-black shadow-[1px_1px_0px_#000] sm:shadow-[1.5px_1.5px_0px_#000]">
+            <span id="quiz-counter" className="text-[8px] sm:text-[10px] font-display font-black bg-[#CCFBF1] text-black px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-full tracking-wider border border-black shadow-[1px_1px_0px_#000] sm:shadow-[1.5px_1.5px_0px_#000]">
               Soal {currentIdx + 1}/{questions.length}
             </span>
             {onViewChart && (
@@ -92,14 +92,14 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
                   playSynthesizerNote('btn');
                   onViewChart();
                 }}
-                className="bg-[#FDE047] hover:bg-[#FACC15] text-black font-black font-display text-[8px] sm:text-[10px] px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-black shadow-[1px_1px_0px_#000] sm:shadow-[1.5px_1.5px_0px_#000] flex items-center gap-1 cursor-pointer transition-transform hover:scale-105 uppercase tracking-tight"
+                className="bg-[#FDE047] hover:bg-[#FACC15] text-black font-black font-display text-[8px] sm:text-[10px] px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-black shadow-[1px_1px_0px_#000] sm:shadow-[1.5px_1.5px_0px_#000] flex items-center gap-1 cursor-pointer transition-transform hover:scale-105 tracking-tight"
                 title="Buka tampilan grafik yang sedang dikerjakan"
               >
                 <span>Lihat Grafik</span>
               </button>
             )}
           </div>
-          <span id="quiz-weight" className="text-[9px] sm:text-xs text-slate-800 font-black font-display uppercase">Bobot: +20 Poin</span>
+          <span id="quiz-weight" className="text-[9px] sm:text-xs text-slate-800 font-black font-display">Bobot: +20 Poin</span>
         </div>
 
         {/* Actual Question */}
@@ -140,7 +140,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
                 id={`btn-quiz-choice-${idx}`}
               >
                 <div id={`quiz-choice-text-${idx}`} className="flex items-center gap-2 sm:gap-3">
-                  <span id={`quiz-choice-letter-${idx}`} className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-display font-black border border-black flex items-center justify-center text-[10px] sm:text-xs shadow-[1px_1px_0px_#000] shrink-0 uppercase ${
+                  <span id={`quiz-choice-letter-${idx}`} className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg font-display font-black border border-black flex items-center justify-center text-[10px] sm:text-xs shadow-[1px_1px_0px_#000] shrink-0 ${
                     isAnswered && option === activeQuestion.correctAnswer
                       ? 'bg-black text-white'
                       : isSelected
@@ -224,7 +224,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
 
                 {/* Correct Answer */}
                 <div id="quiz-wrong-answer">
-                  <p id="quiz-wrong-answer-label" className="text-[8px] md:text-[10px] uppercase tracking-widest font-black text-rose-700 font-mono leading-tight">
+                  <p id="quiz-wrong-answer-label" className="text-[8px] md:text-[10px] tracking-widest font-black text-rose-700 font-mono leading-tight">
                     Jawaban yang benar:
                   </p>
                   <p id="quiz-wrong-answer-value" className="text-[11px] md:text-base font-black text-black leading-snug mt-0.5">
@@ -236,7 +236,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
                 <div id="quiz-wrong-explanation" className="bg-white/70 rounded-lg md:rounded-xl border border-black/20 md:border-2 p-1.5 md:p-4">
                   <div id="quiz-wrong-explanation-header" className="flex items-center gap-1 mb-0.5 md:mb-2">
                     <BookOpen id="quiz-wrong-explanation-icon" className="w-3 h-3 md:w-3.5 md:h-3.5 text-black shrink-0" />
-                    <span id="quiz-wrong-explanation-label" className="text-[8px] md:text-[10px] font-black uppercase tracking-wide font-mono text-black">Penjelasan</span>
+                    <span id="quiz-wrong-explanation-label" className="text-[8px] md:text-[10px] font-black tracking-wide font-mono text-black">Penjelasan</span>
                   </div>
                   <p id="quiz-wrong-explanation-text" className="text-[9px] md:text-xs text-slate-800 leading-snug md:leading-relaxed font-bold whitespace-pre-line">
                     {activeQuestion?.explanation}
@@ -248,7 +248,7 @@ export const QuizSection: React.FC<QuizSectionProps> = ({
                   id="btn-wrong-modal-next"
                   type="button"
                   onClick={handleNext}
-                  className="w-full bg-black hover:bg-slate-900 text-white font-black border-2 border-black px-3 md:px-5 py-1.5 md:py-3.5 rounded-lg md:rounded-xl text-[10px] md:text-md flex items-center justify-center gap-1 md:gap-2 transition-all cursor-pointer font-display uppercase tracking-tight"
+                  className="w-full bg-black hover:bg-slate-900 text-white font-black border-2 border-black px-3 md:px-5 py-1.5 md:py-3.5 rounded-lg md:rounded-xl text-[10px] md:text-md flex items-center justify-center gap-1 md:gap-2 transition-all cursor-pointer font-display tracking-tight"
                 >
                   <span id="quiz-wrong-next-label">{currentIdx < questions.length - 1 ? 'Mengerti, Lanjut Soal' : 'Mengerti, Kirim Nilai'}</span>
                   <ArrowRight id="quiz-wrong-next-icon" className="w-3 h-3 md:w-4 md:h-4 text-white" />
